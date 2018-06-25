@@ -17,12 +17,4 @@
   </ul>
 </div>
 
-<div *ngIf="selectHero">
-  <h2>{{selectHero.name|uppercase}}</h2>
-  <div>
-    <span>id: </span>{{selectHero.id}}
-  </div>
-  <div>
-    <label for="name-input">name: <input id="name-input" [(ngModel)]="selectHero.name" placeholder="my-name"></label>
-  </div>
-</div>
+<app-hero-detail [hero]="selectHero"></app-hero-detail>
